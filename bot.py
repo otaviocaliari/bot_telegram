@@ -202,5 +202,6 @@ def cancelar_apagar(call):
     bot.edit_message_text("❌ Exclusão cancelada.", call.message.chat.id, call.message.message_id)
 
 if __name__ == "__main__":
+    print(f"📁 Banco de dados em: {db.DB_PATH}")
     print("🚀 Bot Financeiro Ativo...")
     bot.infinity_polling(timeout=60, long_polling_timeout=30)
